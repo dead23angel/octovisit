@@ -1,5 +1,7 @@
 <?php
 
+namespace CWTeam\OctoVisit\Updates;
+
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
 

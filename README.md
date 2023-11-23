@@ -14,13 +14,13 @@ A clean way to track your pages & understand your user's behavior. This implemen
 Run the following to install this plugin:
 
 ```bash
-php artisan plugin:install Dead23Angel.OctoVisit
+php artisan plugin:install CWTeam.OctoVisit
 ```
 
 To uninstall this plugin:
 
 ```bash
-php artisan plugin:remove Dead23Angel.OctoVisit
+php artisan plugin:remove CWTeam.OctoVisit
 ```
 
 then, run database migration
@@ -31,7 +31,7 @@ php artisan october:migrate
 
 ## Usage
 
-Then implement the **Dead23Angel.OctoVisit.Behaviors.VisitModel** behavior in the model class:
+Then implement the **CWTeam.OctoVisit.Behaviors.VisitModel** behavior in the model class:
 
 ```php
 namespace Acme\Demo\Models\Post;
@@ -39,7 +39,7 @@ namespace Acme\Demo\Models\Post;
 class Post extends Model
 {
     ...
-    public $implement = ['Dead23Angel.OctoVisit.Behaviors.VisitModel'];
+    public $implement = ['CWTeam.OctoVisit.Behaviors.VisitModel'];
     ...
 }
 ```

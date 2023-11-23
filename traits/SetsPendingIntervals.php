@@ -1,9 +1,9 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Traits;
+namespace CWTeam\OctoVisit\Traits;
 
 use Carbon\Carbon;
-use Dead23Angel\OctoVisit\PendingVisit;
+use CWTeam\OctoVisit\PendingVisit;
 
 /**
  * Pending Intervals TraitName

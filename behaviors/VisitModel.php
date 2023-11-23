@@ -1,11 +1,11 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Behaviors;
+namespace CWTeam\OctoVisit\Behaviors;
 
-use Dead23Angel\OctoVisit\Exceptions\VisitException;
-use Dead23Angel\OctoVisit\Models\Visit;
-use Dead23Angel\OctoVisit\PendingVisit;
-use Dead23Angel\OctoVisit\Traits\FilterByPopularityTimeFrame;
+use CWTeam\OctoVisit\Exceptions\VisitException;
+use CWTeam\OctoVisit\Models\Visit;
+use CWTeam\OctoVisit\PendingVisit;
+use CWTeam\OctoVisit\Traits\FilterByPopularityTimeFrame;
 use System\Classes\ModelBehavior;
 
 /**

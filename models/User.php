@@ -1,6 +1,6 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Models;
+namespace CWTeam\OctoVisit\Models;
 
 use October\Rain\Auth\Models\User as UserBase;
 

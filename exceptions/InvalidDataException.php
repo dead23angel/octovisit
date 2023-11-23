@@ -1,6 +1,6 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Exceptions;
+namespace CWTeam\OctoVisit\Exceptions;
 
 use Exception;
 

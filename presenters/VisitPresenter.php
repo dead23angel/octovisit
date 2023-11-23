@@ -1,9 +1,9 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Presenters;
+namespace CWTeam\OctoVisit\Presenters;
 
 use Coderflex\LaravelPresenter\Presenter;
-use Dead23Angel\OctoVisit\Models\User;
+use CWTeam\OctoVisit\Models\User;
 use Model;
 
 class VisitPresenter extends Presenter

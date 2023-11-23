@@ -1,6 +1,6 @@
 <?php
 
-namespace Dead23Angel\OctoVisit;
+namespace CWTeam\OctoVisit;
 
 use Backend;
 use System\Classes\PluginBase;

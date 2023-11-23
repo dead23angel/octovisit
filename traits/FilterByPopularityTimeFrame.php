@@ -1,6 +1,6 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Traits;
+namespace CWTeam\OctoVisit\Traits;
 
 use Carbon\Carbon;
 use Closure;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Models;
+namespace CWTeam\OctoVisit\Models;
 
 use Coderflex\LaravelPresenter\Concerns\CanPresent;
 use Coderflex\LaravelPresenter\Concerns\UsesPresenters;
-use Dead23Angel\OctoVisit\Presenters\VisitPresenter;
+use CWTeam\OctoVisit\Presenters\VisitPresenter;
 use Model;
 
 /**

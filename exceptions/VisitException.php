@@ -1,8 +1,8 @@
 <?php
 
-namespace Dead23Angel\OctoVisit\Exceptions;
+namespace CWTeam\OctoVisit\Exceptions;
 
-use Dead23Angel\OctoVisit\Behaviors\VisitModel;
+use CWTeam\OctoVisit\Behaviors\VisitModel;
 use Exception;
 use Model;
 

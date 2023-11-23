@@ -1,12 +1,12 @@
 <?php
 
-namespace Dead23Angel\OctoVisit;
+namespace CWTeam\OctoVisit;
 
-use Dead23Angel\OctoVisit\Behaviors\VisitModel;
-use Dead23Angel\OctoVisit\Exceptions\InvalidDataException;
-use Dead23Angel\OctoVisit\Exceptions\VisitException;
-use Dead23Angel\OctoVisit\Models\Visit;
-use Dead23Angel\OctoVisit\Traits\SetsPendingIntervals;
+use CWTeam\OctoVisit\Behaviors\VisitModel;
+use CWTeam\OctoVisit\Exceptions\InvalidDataException;
+use CWTeam\OctoVisit\Exceptions\VisitException;
+use CWTeam\OctoVisit\Models\Visit;
+use CWTeam\OctoVisit\Traits\SetsPendingIntervals;
 use Jaybizzle\CrawlerDetect\CrawlerDetect;
 use Model;
 use RainLab\User\Facades\Auth;
