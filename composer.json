@@ -1,0 +1,24 @@
+{
+    "name": "dead23angel/octovisit-plugin",
+    "type": "october-plugin",
+    "description": "A plugin to keep track of your pages & understand your audience",
+    "homepage": "https://github.com/dead23angel/octovisit",
+    "keywords": ["october", "octobercms", "octovisit", "visit"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Gorokhov",
+            "email": "ivan-gorochov@yandex.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "october/rain": ">=3.0",
+        "coderflexx/laravel-presenter": "^1.1",
+        "illuminate/contracts": "^9.0|^10.0",
+        "jaybizzle/crawler-detect": "^1.2",
+        "composer/installers": "~1.0"
+    },
+    "minimum-stability": "dev"
+}
