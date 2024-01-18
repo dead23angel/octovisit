@@ -5,3 +5,5 @@ v1.0.1:
   - 'Fix error install in octobercms backend'
 v1.0.2:
   - 'Fix name table in model and add form widget'
+v1.0.3:
+  - 'Fix'

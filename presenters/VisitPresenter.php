@@ -26,7 +26,7 @@ class VisitPresenter extends Presenter
     public function user(): Model
     {
         $userId = $this->model->data['user_id'];
-        $userNamespace = config('dead23angel.octovisit::octovisit.user_namespace');
+        $userNamespace = config('cwteam.octovisit::octovisit.user_namespace');
 
         $user = is_null($userNamespace) || empty($userNamespace)
                 ? User::class

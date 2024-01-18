@@ -23,7 +23,7 @@ class Plugin extends PluginBase
         return [
             'name' => 'OctoVisit',
             'description' => 'A plugin to keep track of your pages & understand your audience',
-            'author' => 'Dead23Angel',
+            'author' => 'CWTeam',
             'icon' => 'icon-leaf'
         ];
     }
@@ -47,7 +47,7 @@ class Plugin extends PluginBase
     /**
      * @return string[]
      */
-    public function registerFormWidgets(): void
+    public function registerFormWidgets(): array
     {
         return [
             VisitsCount::class => 'octovisit_visits_count',
