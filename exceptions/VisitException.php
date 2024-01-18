@@ -4,7 +4,7 @@ namespace CWTeam\OctoVisit\Exceptions;
 
 use CWTeam\OctoVisit\Behaviors\VisitModel;
 use Exception;
-use Model;
+use October\Rain\Database\Model;
 
 class VisitException extends Exception
 {

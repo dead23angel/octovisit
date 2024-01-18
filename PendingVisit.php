@@ -8,7 +8,7 @@ use CWTeam\OctoVisit\Exceptions\VisitException;
 use CWTeam\OctoVisit\Models\Visit;
 use CWTeam\OctoVisit\Traits\SetsPendingIntervals;
 use Jaybizzle\CrawlerDetect\CrawlerDetect;
-use Model;
+use October\Rain\Database\Model;
 use RainLab\User\Facades\Auth;
 
 class PendingVisit
