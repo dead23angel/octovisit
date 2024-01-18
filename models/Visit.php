@@ -22,7 +22,7 @@ class Visit extends Model implements CanPresent
      *
      * @var string
      */
-    protected $table = "dead23angel_octovisit_visits";
+    protected $table = "cwteam_octovisit_visits";
 
     /**
      * The attributes that are mass assignable.
@@ -49,6 +49,9 @@ class Visit extends Model implements CanPresent
         'default' => VisitPresenter::class,
     ];
 
+    /**
+     * @var array
+     */
     public $morphTo = [
         'visitable' => []
     ];

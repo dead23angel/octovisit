@@ -3,3 +3,5 @@ v1.0.0:
   - create_octovisits_table.php
 v1.0.1:
   - 'Fix error install in octobercms backend'
+v1.0.2:
+  - 'Fix name table in model and add form widget'

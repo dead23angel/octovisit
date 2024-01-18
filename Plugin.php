@@ -3,6 +3,7 @@
 namespace CWTeam\OctoVisit;
 
 use Backend;
+use CWTeam\OctoVisit\FormWidgets\VisitsCount;
 use System\Classes\PluginBase;
 
 /**
@@ -41,5 +42,15 @@ class Plugin extends PluginBase
     public function boot()
     {
         //
+    }
+
+    /**
+     * @return string[]
+     */
+    public function registerFormWidgets(): void
+    {
+        return [
+            VisitsCount::class => 'octovisit_visits_count',
+        ];
     }
 }

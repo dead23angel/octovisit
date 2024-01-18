@@ -31,7 +31,7 @@ php artisan october:migrate
 
 ## Usage
 
-Then implement the **CWTeam.OctoVisit.Behaviors.VisitModel** behavior in the model class:
+Then implement the **CWTeam\OctoVisit\Behaviors\VisitModel** behavior in the model class:
 
 ```php
 namespace Acme\Demo\Models\Post;
@@ -47,7 +47,7 @@ class Post extends Model
     ...
 }
 ```
-After this step, you are all set, you can now count visits by using `visit` method
+After this step, you are all set, you can now count visits by using `visit` method, but please keep in mind that the method returns an instance of the CWTeam\OctoVisit\PendingVisit class.
 
 ```php
 $post->visit();
@@ -101,6 +101,26 @@ This package is coming with helpful decorate model properties, and it uses [Lara
 | ----------- | ----------- | ----------- | ----------- |
 | `ip()` | `void` | Get the associated IP from the model instance | `$post->visits->first()->present()->ip`|
 | `user()` | `void` | Get the associated User from the model instance | `$post->visits->first()->present()->user->name`|
+
+## View count visits in Backend
+
+1. View in list. Add to columns.yaml
+```yaml
+    visits_count:
+        label: Visits count
+        relation: visits
+        relationCount: true
+        type: number
+```
+
+2. View in form. Add in fields.yaml
+```yaml
+    visits:
+        label: Count visits
+        type: octovisit_visits_count
+        context: [preview, update]
+        readOnly: true
+```
 
 ## Changelog
 
