@@ -36,10 +36,14 @@ Then implement the **CWTeam.OctoVisit.Behaviors.VisitModel** behavior in the mod
 ```php
 namespace Acme\Demo\Models\Post;
 
+use CWTeam\OctoVisit\Behaviors\VisitModel;
+
 class Post extends Model
 {
     ...
-    public $implement = ['CWTeam.OctoVisit.Behaviors.VisitModel'];
+    public $implement = [
+        VisitModel::class,
+    ];
     ...
 }
 ```

@@ -4,6 +4,7 @@ namespace CWTeam\OctoVisit\Updates;
 
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
+use Schema;
 
 return new class extends Migration
 {
@@ -14,7 +15,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('dead23angel_octovisit_visits', static function (Blueprint $table) {
+        Schema::create('cwteam_octovisit_visits', static function (Blueprint $table) {
             $table->id();
             $table->morphs('visitable');
             $table->json('data');
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dead23angel_octovisit_visits');
+        Schema::dropIfExists('cwteam_octovisit_visits');
     }
 };

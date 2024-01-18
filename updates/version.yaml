@@ -1,3 +1,5 @@
 v1.0.0:
   - 'First version of OctoVisit'
   - create_octovisits_table.php
+v1.0.1:
+  - 'Fix error install in octobercms backend'

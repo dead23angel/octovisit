@@ -15,7 +15,7 @@ use System\Classes\ModelBehavior;
  *
  * In the model class definition:
  *
- *   public $implement = ['Dead23Angel.OctoVisit.Behaviors.LocationModel'];
+ *   public $implement = ['CWTeam\OctoVisit\Behaviors\CWTeam'];
  *
  */
 class VisitModel extends ModelBehavior
