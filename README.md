@@ -122,6 +122,41 @@ This package is coming with helpful decorate model properties, and it uses [Lara
         readOnly: true
 ```
 
+## View list visitors in form Backend
+1. Add in fields.yaml
+```yaml
+    visits:
+        label: Count visits
+        type: octovisit_visits_count
+        context: [preview, update]
+        readOnly: true
+```
+
+2. Create view _visitors.htm in folder with controller config
+```html
+<table class="table">
+    <thead>
+    <tr>
+        <th>User id</th>
+        <th>User email</th>
+        <th>IP</th>
+        <th>Date visit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($formModel->visits as $visit) { ?>
+    <tr>
+        <td><?= $visit->present()->user()->id ?? '-' ?></td>
+        <td><?= $visit->present()->user()->email ?? '-' ?></td>
+        <td><?= $visit->present()->ip() ?></td>
+        <td><?= $visit->created_at ?></td>
+    </tr>
+    <?php } ?>
+    </tbody>
+</table>
+
+```
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.

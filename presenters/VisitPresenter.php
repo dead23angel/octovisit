@@ -4,7 +4,8 @@ namespace CWTeam\OctoVisit\Presenters;
 
 use Coderflex\LaravelPresenter\Presenter;
 use CWTeam\OctoVisit\Models\User;
-use Model;
+use Illuminate\Support\Arr;
+use October\Rain\Database\Model;
 
 class VisitPresenter extends Presenter
 {
@@ -15,17 +16,17 @@ class VisitPresenter extends Presenter
      */
     public function ip(): string
     {
-        return $this->model->data['ip'];
+        return Arr::get($this->model->data, 'ip', '-');
     }
 
     /**
      * Get the associated User from the model instance
      *
-     * @return Model
+     * @return Model|null
      */
-    public function user(): Model
+    public function user(): ?Model
     {
-        $userId = $this->model->data['user_id'];
+        $userId = Arr::get($this->model->data, 'user_id');
         $userNamespace = config('cwteam.octovisit::octovisit.user_namespace');
 
         $user = is_null($userNamespace) || empty($userNamespace)
