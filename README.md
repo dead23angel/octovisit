@@ -125,10 +125,10 @@ This package is coming with helpful decorate model properties, and it uses [Lara
 ## View list visitors in form Backend
 1. Add in fields.yaml
 ```yaml
-    visits:
-        label: Count visits
-        type: octovisit_visits_count
-        context: [preview, update]
+    visitors:
+        label: List of visitors
+        type: partial
+        context: [ preview, update ]
         readOnly: true
 ```
 
