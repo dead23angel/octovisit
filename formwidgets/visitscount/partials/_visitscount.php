@@ -10,6 +10,7 @@
         type="number"
         id="<?= $this->getId('input') ?>"
         name="<?= $name ?>"
+	disabled
         value="<?= $value ?>"
         class="form-control"
         readonly="readonly"

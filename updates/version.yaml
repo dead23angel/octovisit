@@ -11,3 +11,5 @@ v1.0.4:
   - 'Fix'
 v1.0.5:
   - 'Fix presenter and update readme'
+v1.0.6:
+  - 'Fixed form widget to disable sending visits on update form to avoid error https://github.com/dead23angel/octovisit/issues/7'
